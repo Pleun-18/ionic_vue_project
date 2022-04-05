@@ -23,12 +23,16 @@ export default defineComponent({
     z-index: 99;
   }
 
-.header{
-  background: #00AAA2;
-  padding: 15px 0 15px 0;
-}
-.toolbar{
-  --background: #00AAA2;
-}
+  .header{
+    background: rgb(35, 35, 35);
+    padding: 15px 0 15px 0;
+  }
+  .toolbar{
+    --background: rgb(35, 35, 35);
+  }
+
+  ion-tab-bar{
+    --background: #00AAA2;
+  }
 
 </style>
