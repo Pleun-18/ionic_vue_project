@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 //import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue'
+import TaskTab from '../views/TaskTab.vue'
 
 const routes /*: Array<RouteRecordRaw> */ = [
   {
@@ -9,7 +10,7 @@ const routes /*: Array<RouteRecordRaw> */ = [
   },
   {
     path: '/tabs/',
-    component: TabsPage,
+    component: TabsPage, TaskTab,
     children: [
       {
         path: '',
@@ -26,7 +27,23 @@ const routes /*: Array<RouteRecordRaw> */ = [
       {
         path: 'tab3',
         component: () => import('@/views/InformationTab.vue')
-      }
+      },
+      {
+        path: 'assigned',
+        component: () => import('@/views/TaskPages/AssignedReports.vue')
+      },
+      {
+        path: 'assigned',
+        component: () => import('@/views/TaskPages/FinishedReports.vue')
+      },
+      {
+        path: 'assigned',
+        component: () => import('@/views/TaskPages/KnowledgeBase.vue')
+      },
+      {
+        path: 'assigned',
+        component: () => import('@/views/TaskPages/SettingsPage.vue')
+      },
     ]
   }
 ]
