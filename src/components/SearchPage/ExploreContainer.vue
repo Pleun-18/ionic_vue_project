@@ -6,7 +6,7 @@
         <ion-item>
           <ion-checkbox slot="start"></ion-checkbox>
           <ion-label>
-            <h1>Create Idea</h1>
+            <h1>Search throught app</h1>
             <ion-note>This Page needs to be searched with</ion-note>
           </ion-label>
           <ion-badge color="success" slot="end"> 5 Days </ion-badge>

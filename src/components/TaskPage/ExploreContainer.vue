@@ -2,17 +2,6 @@
   <ion-page>
     <ion-content>
 
-      <ion-list>
-        <ion-item>
-          <ion-checkbox slot="start"></ion-checkbox>
-          <ion-label>
-            <h1>Scheduled / Completed/ Knowledge Base / Settings</h1>
-            <ion-note>Her will be 4 blocks for tools</ion-note>
-          </ion-label>
-          <ion-badge color="success" slot="end"> 5 Days </ion-badge>
-        </ion-item>
-      </ion-list>
-
       <ion-grid>
         <ion-row class="ion-align-items-center" v-on:click="greet">
           <ion-col col-6 class="task_img">
@@ -43,7 +32,6 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-      
 
     </ion-content>
   </ion-page>
