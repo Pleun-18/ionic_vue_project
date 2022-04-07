@@ -13,8 +13,10 @@
           <ion-title size="large">Tab 2</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <ExploreContainer name="Tab 2 page" />
+
+        <h1>Create Idea</h1>
+        <ion-note>This Page needs to be searched with</ion-note>
+
     </ion-content>
   </ion-page>
 </template>
@@ -22,10 +24,9 @@
 <script lang="js">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/SearchPage/ExploreContainer.vue';
 
 export default defineComponent({
   name: 'SearchTab',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 });
 </script>

@@ -9,20 +9,21 @@
     </ion-header>
     
     <ion-content :fullscreen="true">
-    
-      <h1>Real Estate Information</h1>
-      <ion-note>Page for random information</ion-note>
+      
+      
 
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent} from '@ionic/vue';
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: 'InformationTab',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-});
+  export default defineComponent({
+    name: 'KnowledgeBase'
+  });
+
 </script>
+
+<style scoped>
+</style>
