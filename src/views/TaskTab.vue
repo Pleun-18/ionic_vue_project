@@ -16,15 +16,15 @@
             <router-link to="/tabs/assigned">
             <div>
               <ion-icon src="./assets/tasks.svg"></ion-icon>
-              <p>Tasks</p>
+              <p>Assigned reports</p>
             </div>
             </router-link>
           </ion-col>
           <ion-col col-6 class="task_img" v-on:click="greet">
             <router-link to="/tabs/assigned">
             <div>
-              <ion-icon src="../assets/knowledge.svg"></ion-icon>
-              <p>Knowledge</p>
+              <ion-icon src="../assets/completed.svg"></ion-icon>
+              <p>Finnished Reports</p>
             </div>
             </router-link>
           </ion-col>
@@ -34,8 +34,8 @@
           <ion-col col-6 class="task_img" v-on:click="greet">
             <router-link to="/tabs/assigned">
             <div>
-              <ion-icon src="../assets/completed.svg"></ion-icon>
-              <p>Completed</p>
+              <ion-icon src="../assets/knowledge.svg"></ion-icon>
+              <p>knowledge base</p>
             </div>
             </router-link>
           </ion-col>
