@@ -1,17 +1,12 @@
 <template>
   <ion-page>
-    <ion-header class="header">
-      <ion-toolbar class="toolbar">
-        <ion-title>
-              <ion-img class="logo" src="./assets/logo_white.png" />
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
+    
+    <TopHeader />
     
     <ion-content :fullscreen="true">
     
       <ion-grid>
-        <ion-row class="ion-align-items-center" v-on:click="greet">
+        <ion-row class="ion-align-items-center">
           <ion-col col-6 class="task_img">
             <router-link to="/tabs/assigned">
             <div>
@@ -20,7 +15,7 @@
             </div>
             </router-link>
           </ion-col>
-          <ion-col col-6 class="task_img" v-on:click="greet">
+          <ion-col col-6 class="task_img">
             <router-link to="/tabs/assigned">
             <div>
               <ion-icon src="../assets/completed.svg"></ion-icon>
@@ -31,7 +26,7 @@
         </ion-row>
 
         <ion-row>
-          <ion-col col-6 class="task_img" v-on:click="greet">
+          <ion-col col-6 class="task_img">
             <router-link to="/tabs/assigned">
             <div>
               <ion-icon src="../assets/knowledge.svg"></ion-icon>
@@ -56,16 +51,15 @@
 
 <script lang="js">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonContent } from '@ionic/vue';
+import header from '/src/components/TopHeader'
 
 export default  defineComponent({
   name: 'TaskTab',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }, 
-  methods: {
-      greet() {
-        alert('Hello you clicked on me')
-      }
-    }
+  components: {
+      'TopHeader': header,
+      IonContent
+  }
 })
 </script>
 

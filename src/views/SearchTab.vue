@@ -1,13 +1,9 @@
 <template>
   <ion-page>
-    <ion-header class="header">
-      <ion-toolbar class="toolbar">
-        <ion-title>
-              <ion-img class="logo" src="./assets/logo_white.png" />
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
+    
+    <TopHeader />
+
+    <ion-content>
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Tab 2</ion-title>
@@ -23,10 +19,14 @@
 
 <script lang="js">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonContent } from '@ionic/vue';
+import header from '/src/components/TopHeader'
 
 export default defineComponent({
   name: 'SearchTab',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: {
+      'TopHeader': header,
+      IonContent
+  }
 });
 </script>

@@ -1,12 +1,7 @@
 <template>
   <ion-page>
-    <ion-header class="header">
-      <ion-toolbar class="toolbar">
-        <ion-title>
-              <ion-img class="logo" src="./assets/logo_white.png" />
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
+
+    <TopHeader />
     
     <ion-content :fullscreen="true">
     
@@ -19,10 +14,14 @@
 
 <script lang="js">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent} from '@ionic/vue';
+import { IonContent } from '@ionic/vue';
+import header from '/src/components/TopHeader'
 
 export default defineComponent({
-  name: 'InformationTab',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  name: 'InformationTab', 
+  components: {
+      'TopHeader': header,
+      IonContent
+  }
 });
 </script>
