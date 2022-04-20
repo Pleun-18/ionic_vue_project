@@ -7,41 +7,19 @@
         </ion-title>
       </ion-toolbar>
     </ion-header>
+
+    <TopMenu />
     
     <ion-content :fullscreen="true">
-      
-      <ion-list>
-        <ion-item>
+
+       <ion-list>
+        <ion-item v-for="inspection in inspections" :key="inspection.id">
           <ion-checkbox slot="start"></ion-checkbox>
           <ion-label>
-            <h1>Real Estate Information</h1>
-            <ion-note>Page for random information</ion-note>
+            <h1> {{ inspection.location }} </h1>
+            <ion-note> {{ inspection.description }} {{ inspection.comment }} </ion-note>
           </ion-label>
-          <ion-badge color="success" slot="end"> 5 Days </ion-badge>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox slot="start"></ion-checkbox>
-          <ion-label>
-            <h1>Real Estate Information</h1>
-            <ion-note>Page for random information</ion-note>
-          </ion-label>
-          <ion-badge color="success" slot="end"> 5 Days </ion-badge>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox slot="start"></ion-checkbox>
-          <ion-label>
-            <h1>Real Estate Information</h1>
-            <ion-note>Page for random information</ion-note>
-          </ion-label>
-          <ion-badge color="success" slot="end"> 5 Days </ion-badge>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox slot="start"></ion-checkbox>
-          <ion-label>
-            <h1>Real Estate Information</h1>
-            <ion-note>Page for random information</ion-note>
-          </ion-label>
-          <ion-badge color="success" slot="end"> 5 Days </ion-badge>
+          <ion-badge color="success" slot="end"> {{ inspection.type }} </ion-badge>
         </ion-item>
       </ion-list>
 
@@ -59,14 +37,20 @@
 <script lang="js">
   import { defineComponent } from 'vue';
   import { add } from '@ionic/vue';
+  import json from '/src/data/FinishedInspections.json'
 
   export default defineComponent({
     name: 'AssignedReports', 
     setup() {
-    return {
-      add
+      return {
+        add
+      }
+    },
+    data(){
+      return {
+        inspections: json
+      }
     }
-  }
   });
 
 </script>

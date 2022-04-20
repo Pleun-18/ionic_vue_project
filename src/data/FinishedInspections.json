@@ -1,5 +1,4 @@
-{
-    "inspection-1": [
+[
         {
             "id": 1,
             "type": "damage",
@@ -9,9 +8,7 @@
             "sort": "Violence",
             "action": false, 
             "description": "Multiple broken windows"
-        }
-    ],
-    "inspection-2": [
+        },
         {
             "id": 2,
             "type": "maintenance",
@@ -20,9 +17,7 @@
             "sort": "wood rot",
             "action": true,
             "costs": 1700
-        }
-    ],
-    "inspection-3": [
+        },
         {
             "id": 3,
             "type": "technical",
@@ -33,9 +28,7 @@
             "procedure": "../public/assets/procedure.pdf",
             "confirmed": true, 
             "comment": "heater won't go off normally"
-        }
-    ],
-    "inspection-4": [
+        },
         {
             "id": 4,
             "type": "modify",
@@ -46,9 +39,7 @@
             "description": "Raam vervangen",
             "action": "change", 
             "comment": "Windows are breaking easily"
-        }
-    ],
-    "inspection-5": [
+        },
         {
             "id": 5,
             "type": "damage",
@@ -59,5 +50,4 @@
             "action": true, 
             "description": "Discussion with neighbours led to tree on roof"
         }
-    ]
-}
+]
