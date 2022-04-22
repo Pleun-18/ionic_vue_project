@@ -1,7 +1,15 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHashHistory } from '@ionic/vue-router';
 //import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue'
 import TaskTab from '../views/TaskTab.vue'
+// import { Service } from '../services/service';
+
+// let vue = new Vue({
+//   router,
+//   render: h => h(App)
+// }).$mount('#app')
+
+// Service.prototype.$vue = vue;
 
 const routes /*: Array<RouteRecordRaw> */ = [
   {
@@ -49,7 +57,7 @@ const routes /*: Array<RouteRecordRaw> */ = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes
 })
 
